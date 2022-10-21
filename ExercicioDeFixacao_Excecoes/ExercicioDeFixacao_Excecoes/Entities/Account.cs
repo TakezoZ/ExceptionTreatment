@@ -31,10 +31,11 @@ namespace ExercicioDeFixacao_Excecoes.Entities
             {
                 throw new DomainException("The amount exceeds withdraw limit");
             }
-            if (Balance < amount)
+            if (amount > Balance)
             {
                 throw new DomainException("Not enough balance");
             }
+
             Balance -= amount;
         }
     }
