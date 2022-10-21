@@ -31,7 +31,6 @@ namespace CreatingCustomExceptions
                 checkOut = DateTime.Parse(Console.ReadLine());
 
                 DateTime now = DateTime.Now;
-
                 if (checkIn < now || checkOut < now)
                 {
                     Console.WriteLine("Error in reservation: Reservation dates for update must be future dates");
